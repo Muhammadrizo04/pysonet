@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'djoser',
-
+    'drf_yasg',
     'src.profiles',
 ]
 
@@ -136,3 +136,10 @@ SIMPLE_JWT = {
 
 AUTH_USER_MODEL = 'profiles.UserNet'
 
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:8080",
+    "http://localhost:8081",
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:1313",
+    "http://localhost:1313",
+]
