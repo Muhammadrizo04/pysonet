@@ -5,6 +5,7 @@ from .models import UserNet
 
 class GetUserNetSerializer(serializers.ModelSerializer):
     """displaying information the user"""
+    avatar = serializers.ImageField(read_only=True)
 
     class Meta:
         model = UserNet
